@@ -4,7 +4,6 @@ var express = require('express');
 var formidable = require('formidable');
 var app = express();
 var storage = new Object();
-var pi = 1;
 app.get('/api/compute', function (req, res) {
 	if(req.headers["hw-token"] !== '881cb828b8f3d84ce21150020c3dd6c086a6e49a'){
 		res.sendStatus(403);
